@@ -10,4 +10,4 @@ RUN locale-gen en_US.utf8
 
 ENV LC_ALL=en_US.utf8
 
-CMD ["ls", "gdal*", "ogr*"]
+CMD ["sh", "-c", "echo '[available commands]\n' && cd /usr/bin && ls gdal* ogr*"]
